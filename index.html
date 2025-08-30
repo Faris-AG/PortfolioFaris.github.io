@@ -317,9 +317,11 @@
         }
       }
     </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
+    <header data-aos="fade-right" class="header">
       <div class="container navbar">
         <a href="#" class="logo">[X-PPLG 3]</a>
         <nav class="nav-links">
@@ -331,7 +333,7 @@
       </div>
     </header>
 
-    <section class="hero" id="hero">
+    <section data-aos="fade-down" class="hero" id="hero">
       <img
         src="https://www.shutterstock.com/image-vector/letter-f-curves-logo-vector-260nw-1021437535.jpg"
         alt="Faris AG Profile"
@@ -345,7 +347,7 @@
       <a href="#projects" class="btn">Lihat Projek Saya</a>
     </section>
 
-    <section class="about" id="about">
+    <section data-aos="zoom-out-down" class="about" id="about">
       <div class="container about-content">
         <h2>Tentang Saya</h2>
         <p>
@@ -355,7 +357,7 @@
           baik adalah perpaduan antara estetika, empati terhadap pengguna, dan
           implementasi teknis yang solid.
         </p>
-        <div class="skills">
+        <div data-aos="zoom-in" class="skills">
           <span class="skill-badge">Figma</span>
           <span class="skill-badge">HTML5</span>
           <span class="skill-badge">CSS3</span>
@@ -367,7 +369,7 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section data-aos="zoom-in" class="projects" id="projects">
       <div class="container">
         <h2>Proyek Pilihan</h2>
         <div class="projects-grid">
@@ -417,7 +419,7 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section data-aos="fade-left" class="contact" id="contact">
       <div class="container contact-content">
         <h2>Hubungi Saya</h2>
         <p>
@@ -425,10 +427,14 @@
           Anda!
         </p>
         <div class="contact-links">
-          <a href="mailto:farisahmadghaisan321@email.com">📧</a>
-          <a href="https://linkedin.com" target="_blank">🔗</a>
-          <a href="https://github.com/Faris-AG" target="_blank">💻</a>
-          <a href="https://www.instagram.com/riss.indomie?igsh=bTJrZ3V4bjc4OTk4" target="_blank">📸</a>
+          <a href="mailto:farisahmadghaisan321@email.com">Email</a>
+          <a href="https://linkedin.com" target="_blank">Linkd</a>
+          <a href="https://github.com/Faris-AG" target="_blank">GIT</a>
+          <a
+            href="https://www.instagram.com/riss.indomie?igsh=bTJrZ3V4bjc4OTk4"
+            target="_blank"
+            >Instagram</a
+          >
         </div>
       </div>
     </section>
@@ -439,6 +445,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       const themeToggle = document.getElementById("theme-toggle");
       const body = document.body;
@@ -457,6 +464,9 @@
         themeToggle.textContent = "Theme";
       }
     </script>
+    <script>
+      AOS.init();
+      once: true;
+    </script>
   </body>
 </html>
-
